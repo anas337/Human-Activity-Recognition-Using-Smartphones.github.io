@@ -6,18 +6,18 @@
 
 # Human Activity Recognition Using Smartphones:
 
-## Introduction:
+# Introduction:
 
 Since 1870 a large growth in human life expectancy has been observed in Europe. This growth has expanded in the whole world principally due to the great achievements in health care field. As a result, the proportion of elderly people is rapidly increasing. Aging people in general lives in isolated
 conditions. In addition to that some of them are not capable to live normally and take advantages from health care facilities services. Building remote monitoring systems for elderly patients who live alone or without permanent caretaking will improve their quality of life. For better decision making these remote monitoring systems needs some regular and trustful information about patients.
 
 The goal of this project is to build a machine learning model and a signal processing pipeline capable of processing signals collected using smart phone inertial sensors (accelerometer and gyroscope) and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier.
 
-## Project Origins:
+# Project Origins:
 
 To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](https://www.icephd.org/wiki/index.php/Jorge_Luis_Reyes_Ortiz) has developed a complete [Human Activity Recognition System](https://en.wikipedia.org/wiki/Activity_recognition) able to detect and recognize 12 different activities performed by humans in their daily living using smartphones. The recognition part of his system is based on an  [SVM model](https://en.wikipedia.org/wiki/Support_vector_machine) already trained, capable of predicting activities performed by users. Necessary datasets of users’ movements were collected from smartphone sensors ([accelerometer](https://en.wikipedia.org/wiki/Accelerometer) and [gyroscope](https://en.wikipedia.org/wiki/Gyroscope) ). The datasets will be processed and fed to the prediction model to recognize performed activities.
 
-## Software Requirements:
+# Software Requirements:
 
 This project requires **Python 3.5 ** and the following Python libraries installed:
 - [Python 3.5](https://www.python.org/download/releases/3.0/) 
@@ -30,10 +30,16 @@ You will also need to have software installed to run and execute an [iPython Not
 
 ## Install:
 
-## Project Architecture:
+# Project Architecture:
 
-For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). This repository contains three directories and seven files:
+For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). This repository includes three global directories and 7 files:
 
+
+### Directories:
+	- `\Description-Images\`:
+	
+	- `\Reports\`:
+	
 	- `.\Data\`: Under this Directory you will find all Datasets used in this project.
 		
 		
@@ -45,36 +51,28 @@ For this project, you can find the `Human Activity Recognition` repository conta
 		
 		-`.\ New Data\`: Under this directory you will find the processed datasets generated using 
 		                 `Part_I--Signal-Processing-Pipeline.ipynb`. 
-	
-	
-	- `\Description-Images\`:
+		
+### Code Files:
 
 	- `Part_I--Signal-Processing-Pipeline.ipynb`:
-	- `Part_I--Signal-Processing-Pipeline.html`:
-
 	- `Part_II--Machine-Learning-Part.ipynb`:
-	- `Part_II--Machine-Learning-Part.html`:
+	
 
 	- `UCI_HAR_Dataset_V1.ipynb`:
-	- `UCI_HAR_Dataset_V1.html`:
-
 	- `UCI_HAR_Dataset_V1_Inertial_Signals.ipynb`:
-	- `UCI_HAR_Dataset_V1_Inertial_Signals.html`:
+	
 
 	- `HAPT_RawData_statistics_V2.ipynb`
-	- `HAPT_RawData_statistics_V2.html`
-
 	- `HAPT_ML_V2.ipynb`
-	- `HAPT_ML_V2.html`
+	
+- `README.md` : It contains a short description of this project and necessary steps to run it successfully.
 
-	- `Project-Proposal.pdf`:
-	- `Project-Report.pdf`:
 
-	- `README.md` : It contains a short description of this project and necessary steps to run it successfully.
+# Dataset and Inputs:
 
-## Data and Inputs:
+## Original Datasets:
 
-### The experiment:
+### 1-The experiment:
 
 The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs). The experiment also included postural transitions that occurred between the static postures. These are: stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit, stand-to-lie, and lie-to-stand. 
 
@@ -87,51 +85,58 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 
 This `Raw-Data` was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
-### The Reduced Data or [UCI Human Activity Recognition Using smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
+### 2- The Reduced Data or [UCI Human Activity Recognition Using smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
 
 From the `Raw-Data` presented in the picture above, they extract data points and activity labels related only to The first six basic activities which are : standing, sitting, lying, walking, walking downstairs and walking upstairs.
 
-#### Signal Processing:
+#### 2-1. Signal Processing:
 The sensor signals (accelerometer and gyroscope) for the training and testing sets of this reduced data were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. These signals were stored in the directory `Inertial Signals`. 
 
-#### Data processing and Features Generation:
+#### 2-2. Data processing and Features Generation:
 From each group of windows (lines) having the same line number in all 9 log files, a vector of 561 features (See `features_info.txt` for more details) was obtained by calculating variables from the time and frequency domain. These features were stored in the directory `processed data` which contains train and test files.
 
-#### Data Architecture:
+#### 2-3. Data Architecture:
 This first version located in `/Original-Data/UCI HAR Dataset(V1)/` can be divided into two parts (Two Directories) and they can be used separately.  
 
-1. Inertial Signals: Data located in the directory `./Inertial Signals/`:
+##### A. Inertial Signals: Data located in the directory `./Inertial Signals/`:
 
-	- `./train/`: 
+- `./train/`: 
 
-			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in 
-			                           standard gravity units 'g'. Every row shows a 128 element vector. 
-						     The same description applies for the 'total_acc_x_train.txt' and 
-						     'total_acc_z_train.txt' files for the Y and Z axis. 
+		- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in 
+					   standard gravity units 'g'. Every row shows a 128 element vector. 
+					     The same description applies for the 'total_acc_x_train.txt' and 
+					     'total_acc_z_train.txt' files for the Y and Z axis. 
 
-			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from 
-			                          the total acceleration.
+		- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from 
+					  the total acceleration.
 
-			- `body_gyro_acc_x_train.txt`:The angular velocity vector measured by the gyroscope for each window 
-			                              sample. The units are radians/second. 
+		- `body_gyro_acc_x_train.txt`:The angular velocity vector measured by the gyroscope for each window 
+					      sample. The units are radians/second. 
 
-	- `./test/*`: This Directory includes the testing files related to the inertial signals mentioned above.
+- `./test/*`: This Directory includes the testing files similarly to the `./train/`.
 
 
-2. The Processed Data: contains records of the first six basic activities windows. Each one composed 561-feature vector with time and frequency domain variables. The dataset is located in the directory `./Processed Data V1/` it includes The following files:
+##### B. The Processed Data verion 1.0:
+This Directory contains records of the first six basic activities windows. Each one composed 561-feature vector with time and frequency domain variables. The dataset is located in the directory `./Processed Data V1/` it includes The following files:
 
-	- X_train.txt: Train features
-	- X_test.txt:  Test features
+	- `X_train.txt`: Train features
+	- `X_test.txt`:  Test features
+##### C. Other files:
 
-- y_train.txt: train activity labels
-- y_test.txt: test activity labels
-- subject_train.txt: An identifier of the subject who carried out the experiment
-- subject_test.txt:An identifier of the subject who carried out the experiment
-- features_info.txt:Shows information about the variables used on the feature vector.
-- features.txt:
+		- `y_train.txt`: train activity labels
+		- `y_test.txt`: test activity labels
+		- `subject_train.txt`: An identifier of the subject who carried out the experiment
+		- `subject_test.txt`:An identifier of the subject who carried out the experiment
+		- `features_info.txt`:Shows information about the variables used on the feature vector.
+		- `features.txt`:
 
  
-### [Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.0]()
+
+
+
+
+
+# [Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.0]()
 
 This dataset is an extended version of the [UCI Human Activity Recognition Using smartphones Dataset](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) mentioned earlier.
 This version provides the original signals captured from the smartphone sensors mentioned earlier `Raw-Data`, instead of the ones pre-processed into windows  `Inertial signals` which were provided in version 1. This change was done in order to be able to make online tests with the data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset.
