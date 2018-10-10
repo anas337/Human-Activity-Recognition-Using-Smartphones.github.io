@@ -35,9 +35,13 @@ You will also need to have software installed to run and execute an [iPython Not
 For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). This repository contains three directories and seven files:
 
 	- `.\Data\`: Under this Directory you will find all Datasets used in this project.
+		
+		
 		- `.\Original Data\`: This directory includes the original Datasets  brought by Jorge Luis Reyes Ortiz
+			
 			- `.\UCI HAR Dataset\`: This Directory contains Datasets related to The first verion 1.0
 			- `.\HAPT Dataset\`: This Directory The second version of his dataset.
+		
 		
 		-`.\ New Data\`: Under this directory you will find the processed datasets generated using 
 		                 `Part_I--Signal-Processing-Pipeline.ipynb`. 
