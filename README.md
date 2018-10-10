@@ -93,30 +93,35 @@ From each group of windows (lines) having the same line number in all 9 log file
 #### Data Architecture:
 This first version located in `/Original-Data/UCI HAR Dataset(V1)/` can be divided into two parts (Two Directories) and they can be used separately.  
 
-	1. Inertial Signals: Data located in the directory `./Inertial Signals/`:
-		
-		- `./train/`: 
-			
-			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-			
-			- `body_acc_x_train.txt`:The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+1. Inertial Signals: Data located in the directory `./Inertial Signals/`:
 
-			- `body_gyro_acc_x_train.txt`:The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
-		
-		- `./test/*`: This Directory includes the testing files related to the inertial signals mentioned above.
- 
-  
-	2. The Processed Data: contains records of the first six basic activities windows. Each one composed 561-feature vector with time and frequency domain variables. The dataset is located in the directory `./Processed Data V1/` it includes The following files:
+	- `./train/`: 
 
-		- X_train.txt: Train features
-		- X_test.txt:  Test features
+			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in 
+			                           standard gravity units 'g'. Every row shows a 128 element vector. 
+						     The same description applies for the 'total_acc_x_train.txt' and 
+						     'total_acc_z_train.txt' files for the Y and Z axis. 
 
-	- y_train.txt: train activity labels
-	- y_test.txt: test activity labels
-	- subject_train.txt: An identifier of the subject who carried out the experiment
-	- subject_test.txt:An identifier of the subject who carried out the experiment
-	- features_info.txt:Shows information about the variables used on the feature vector.
-	- features.txt:
+			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from 
+			                          the total acceleration.
+
+			- `body_gyro_acc_x_train.txt`:The angular velocity vector measured by the gyroscope for each window 
+			                              sample. The units are radians/second. 
+
+	- `./test/*`: This Directory includes the testing files related to the inertial signals mentioned above.
+
+
+2. The Processed Data: contains records of the first six basic activities windows. Each one composed 561-feature vector with time and frequency domain variables. The dataset is located in the directory `./Processed Data V1/` it includes The following files:
+
+	- X_train.txt: Train features
+	- X_test.txt:  Test features
+
+- y_train.txt: train activity labels
+- y_test.txt: test activity labels
+- subject_train.txt: An identifier of the subject who carried out the experiment
+- subject_test.txt:An identifier of the subject who carried out the experiment
+- features_info.txt:Shows information about the variables used on the feature vector.
+- features.txt:
 
  
 ### [Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.0]()
