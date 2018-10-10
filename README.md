@@ -6,18 +6,21 @@
 
 # Human Activity Recognition Using Smartphones:
 
-# Introduction:
+# I. Introduction:
 
 Since 1870 a large growth in human life expectancy has been observed in Europe. This growth has expanded in the whole world principally due to the great achievements in health care field. As a result, the proportion of elderly people is rapidly increasing. Aging people in general lives in isolated
 conditions. In addition to that some of them are not capable to live normally and take advantages from health care facilities services. Building remote monitoring systems for elderly patients who live alone or without permanent caretaking will improve their quality of life. For better decision making these remote monitoring systems needs some regular and trustful information about patients.
 
 The goal of this project is to build a machine learning model and a signal processing pipeline capable of processing signals collected using smart phone inertial sensors (accelerometer and gyroscope) and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier.
 
-# Project Origins:
+#### Project Origins:
 
 To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](https://www.icephd.org/wiki/index.php/Jorge_Luis_Reyes_Ortiz) has developed a complete [Human Activity Recognition System](https://en.wikipedia.org/wiki/Activity_recognition) able to detect and recognize 12 different activities performed by humans in their daily living using smartphones. The recognition part of his system is based on an  [SVM model](https://en.wikipedia.org/wiki/Support_vector_machine) already trained, capable of predicting activities performed by users. Necessary datasets of users’ movements were collected from smartphone sensors ([accelerometer](https://en.wikipedia.org/wiki/Accelerometer) and [gyroscope](https://en.wikipedia.org/wiki/Gyroscope) ). The datasets will be processed and fed to the prediction model to recognize performed activities.
 
-# Software Requirements:
+#### Project Overview:
+
+
+# II. Software Requirements:
 
 This project requires **Python 3.5 ** and the following Python libraries installed:
 - [Python 3.5](https://www.python.org/download/releases/3.0/) 
@@ -28,14 +31,15 @@ We recommend to install [Anaconda](https://www.continuum.io/downloads), a pre-pa
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
-## Install:
+### Install:
 
-# Project Architecture:
+
+# III. Project Architecture:
 
 For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). This repository includes three global directories and 7 files:
 
 
-### Directories:
+### III-1. Directories:
 	- `\Description-Images\`:
 	
 	- `\Reports\`:
@@ -52,7 +56,7 @@ For this project, you can find the `Human Activity Recognition` repository conta
 		-`.\ New Data\`: Under this directory you will find the processed datasets generated using 
 		                 `Part_I--Signal-Processing-Pipeline.ipynb`. 
 		
-### Code Files:
+### III-2. Notebooks:
 
 	- `Part_I--Signal-Processing-Pipeline.ipynb`:
 	- `Part_II--Machine-Learning-Part.ipynb`:
@@ -65,14 +69,14 @@ For this project, you can find the `Human Activity Recognition` repository conta
 	- `HAPT_RawData_statistics_V2.ipynb`
 	- `HAPT_ML_V2.ipynb`
 	
-- `README.md` : It contains a short description of this project and necessary steps to run it successfully.
+###### `README.md` : It contains a short description of this project and necessary steps to run it successfully.
 
 
-# Dataset and Inputs:
+# IV. Dataset and Inputs:
 
-## Original Datasets:
+## IV-1. Original Datasets:
 
-### 1-The experiment:
+### A. The Experiment:
 
 The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs). The experiment also included postural transitions that occurred between the static postures. These are: stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit, stand-to-lie, and lie-to-stand. 
 
@@ -82,10 +86,30 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 
 ![image2]
 
-
+### B. Data Splitting
 This `Raw-Data` was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
-### 2- The Reduced Data or [UCI Human Activity Recognition Using smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
+#### C. Signal Processing:
+
+##### Noise filtering:
+The sensor signals (accelerometer and gyroscope) for the training and testing sets were pre-processed by applying noise filters:
+- The median filter:
+- Butterworth High-pass filter with 25hz cutoff frequency
+
+##### Data Sampling:
+Filtred signals were sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). 
+
+##### Gravity filtering:
+The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used.
+
+#### D. Data Processing 
+From each group of windows (lines) having the same line number in all 9 log files, a vector of 561 features (See `features_info.txt` for more details) was obtained by calculating variables from the time and frequency domain. These features were stored in the directory `processed data` which contains train and test files.
+
+#### E. Features Generation
+
+![image3]
+
+####  The Reduced Data or [UCI Human Activity Recognition Using smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
 
 From the `Raw-Data` presented in the picture above, they extract data points and activity labels related only to The first six basic activities which are : standing, sitting, lying, walking, walking downstairs and walking upstairs.
 
