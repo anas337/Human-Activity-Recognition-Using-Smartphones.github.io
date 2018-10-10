@@ -37,34 +37,33 @@ You will also need to have software installed to run and execute an [iPython Not
 
 ## Project Architecture:
 
-For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). 
+For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). This repository contains three directories and seven files:
 
-- This repository contains three directories and seven files:
-	- `\Data\`:
-	- `\Description-Images\`:
+- `\Data\`:
+- `\Description-Images\`:
 
-	- `Part_I--Signal-Processing-Pipeline.ipynb`:
-	- `Part_I--Signal-Processing-Pipeline.html`:
+- `Part_I--Signal-Processing-Pipeline.ipynb`:
+- `Part_I--Signal-Processing-Pipeline.html`:
 
-	- `Part_II--Machine-Learning-Part.ipynb`:
-	- `Part_II--Machine-Learning-Part.html`:
+- `Part_II--Machine-Learning-Part.ipynb`:
+- `Part_II--Machine-Learning-Part.html`:
 
-	- `UCI_HAR_Dataset_V1.ipynb`:
-	- `UCI_HAR_Dataset_V1.html`:
+- `UCI_HAR_Dataset_V1.ipynb`:
+- `UCI_HAR_Dataset_V1.html`:
 
-	- `UCI_HAR_Dataset_V1_Inertial_Signals.ipynb`:
-	- `UCI_HAR_Dataset_V1_Inertial_Signals.html`:
+- `UCI_HAR_Dataset_V1_Inertial_Signals.ipynb`:
+- `UCI_HAR_Dataset_V1_Inertial_Signals.html`:
 
-	- `HAPT_RawData_statistics_V2.ipynb`
-	- `HAPT_RawData_statistics_V2.html`
+- `HAPT_RawData_statistics_V2.ipynb`
+- `HAPT_RawData_statistics_V2.html`
 
-	- `HAPT_ML_V2.ipynb`
-	- `HAPT_ML_V2.html`
+- `HAPT_ML_V2.ipynb`
+- `HAPT_ML_V2.html`
 
-	- `Project-Proposal.pdf`:
-	- `Project-Report.pdf`:
+- `Project-Proposal.pdf`:
+- `Project-Report.pdf`:
 
-	- `README.md` : It contains a short description of this project and necessary steps to run it successfully.
+- `README.md` : It contains a short description of this project and necessary steps to run it successfully.
 
 ## Data and Inputs:
 
