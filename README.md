@@ -20,14 +20,9 @@ To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](htt
 ## Software Requirements:
 
 This project requires **Python 3.5 ** and the following Python libraries installed:
-- [Python 3.5](https://www.python.org/download/releases/3.0/)
-- [NumPy](http://www.numpy.org/)
-- [SciPy](https://www.scipy.org/)
-- [Pandas](https://pandas.pydata.org/)
-- [matplotlib](http://matplotlib.org/)
-- [Statsmodel](http://www.statsmodels.org/stable/index.html) 
-- [Spectrum](https://pypi.org/project/spectrum/)
-- [scikit-learn](http://scikit-learn.org/stable/)
+- [Python 3.5](https://www.python.org/download/releases/3.0/) 
+- [NumPy](http://www.numpy.org/)  , [SciPy](https://www.scipy.org/) , [Pandas](https://pandas.pydata.org/) , [matplotlib](http://matplotlib.org/)
+- [Statsmodel](http://www.statsmodels.org/stable/index.html)  , [Spectrum](https://pypi.org/project/spectrum/) , [scikit-learn](http://scikit-learn.org/stable/)
 
 We recommend to install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains some of the necessary libraries and software for this project make to install an anconda environment that includes python 3.x . 
 
