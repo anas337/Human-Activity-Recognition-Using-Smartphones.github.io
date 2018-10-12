@@ -91,7 +91,7 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 
 ### B. Data Splitting:
 
-#### C. Signal Processing:
+### C. Signal Processing:
 
 ##### Noise filtering:
 
