@@ -7,12 +7,12 @@ Since 1870 a large growth in human life expectancy has been observed in Europe. 
 #### Project Origins:
 To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](https://www.icephd.org/wiki/index.php/Jorge_Luis_Reyes_Ortiz) has developed a complete [Human Activity Recognition System](https://en.wikipedia.org/wiki/Activity_recognition) able to detect and recognize 12 different activities performed by humans in their daily living in online mode using smartphones. The recognition part of his system is based on an [SVM model](https://en.wikipedia.org/wiki/Support_vector_machine) already trained, capable of predicting activities performed by users. Necessary datasets of users’ movements will be collected from smartphone sensors ([accelerometer](https://en.wikipedia.org/wiki/Accelerometer) and [gyroscope](https://en.wikipedia.org/wiki/Gyroscope)). The datasets will be processed and fed to the prediction model to recognize performed activities.
 
-#### Project Overview:
 To build the final model embedded in this HAR system. An offline version of this system needs to be created for two reasons:
-- 1. To construct the signal processing pipeline.
-- 2. To build the train-test pipelines and to apply model hyperparameters tuning.
-This offline version includes original datasets where the model will be trained.
+##### 1. To construct the signal processing pipeline and process the original data collected.
+##### 2. To build the train-test pipelines and test different state of art ML alogrithms to choose the optimal one.
 
+
+#### Project Overview:
 The goal of this project is to build a machine learning model and a signal processing pipeline in offline mode capable of processing signals collected using smart phone inertial sensors (accelerometer and gyroscope) and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier
 
 # II. Software Requirements:
