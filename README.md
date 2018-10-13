@@ -42,8 +42,8 @@ This repository includes three main directories and 7 files:
 			- `. \HAPT-Dataset\`: The second version V 2.0
 		
 		
-		-`.\ New Data\`: Under this directory you will find the processed datasets generated from the original ones 
-				  using: `Part_I--Signal-Processing-Pipeline.ipynb`. 
+		-`.\ New Data\`: Under this directory you will find the processed datasets generated from the original 
+		                 ones using: `Part_I--Signal-Processing-Pipeline.ipynb`. 
 		
 ### III-2. Notebooks:
 
@@ -63,7 +63,8 @@ This repository includes three main directories and 7 files:
 	- `HAPT_RawData_statistics_V2.ipynb`
 	- `HAPT_ML_V2.ipynb`
 	
-###### `README.md` : It contains a short description of this project and necessary steps to run it successfully.
+	- `README.md` : It contains a short description of this project and necessary 
+	                steps to run it successfully.
 
 
 # IV. Dataset and Inputs:
