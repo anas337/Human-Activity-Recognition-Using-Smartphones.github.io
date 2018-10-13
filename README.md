@@ -26,36 +26,29 @@ You will also need to have software installed to run and execute an [iPython Not
 
 You could import the used environment via the YAML file.
 
-
 # III. Project Architecture:
 
-For this project, you can find the `Human Activity Recognition` repository containing the necessary project files on the [my github profile](https://github.com/anas337/). 
-
+This repository includes three main directories and 7 files:
 
 ### III-1. Directories:
 
-This repository includes three main directories and 7 files:
+	- `\Description-Images\`: This folder includes images used for aesthetic purposes
 	
-	- `\Description-Images\`:
-	
-	- `\Reports\`:
+	- `\Reports\`: Contains an HTML version of each notebook + 2 reports
 	
 	- `.\Data\`: Under this Directory you will find all Datasets used in this project.
+		- `.\Original-Data\`: contains the original Datasets brought by Jorge Luis Reyes Ortiz.	
+			- `. \UCI-HAR-Dataset\`:  The first version of this Dataset V 1.0
+			- `. \HAPT-Dataset\`: The second version V 2.0
 		
 		
-		- `.\Original Data\`: This directory includes the original Datasets  brought by Jorge Luis Reyes Ortiz
-			
-			- `.\UCI HAR Dataset\`: This Directory contains Datasets related to The first verion 1.0
-			- `.\HAPT Dataset\`: This Directory The second version of his dataset.
-		
-		
-		-`.\ New Data\`: Under this directory you will find the processed datasets generated using 
+		-`.\ New Data\`: Under this directory you will find the processed datasets generated from the original ones using:
 		                 `Part_I--Signal-Processing-Pipeline.ipynb`. 
 		
 ### III-2. Notebooks:
 
-	- `Part_I--Signal-Processing-Pipeline.ipynb`:
-	- `Part_II--Machine-Learning-Part.ipynb`:
+	- `Part_I--Signal-Processing-Pipeline.ipynb`: This is jupyter notebook file which contains the signal processing pipeline, visualizations and detailed analysis of each step performed in this part.	
+	- `Part_II--Machine-Learning-Part.ipynb`:  This is jupyter notebook file which contains  python code related to machine learning, visualizations and detailed analysis of each step performed to build the final model.
 	
 
 	- `UCI_HAR_Dataset_V1.ipynb`:
