@@ -63,8 +63,8 @@ This repository includes three main directories and 7 files:
 	- `HAPT_RawData_statistics_V2.ipynb`
 	- `HAPT_ML_V2.ipynb`
 	
-	- `README.md` : It contains a short description of this project and necessary 
-	                steps to run it successfully.
+	- `README.md` : It contains a short description of this project and necessary steps to 
+	                run it successfully.
 
 
 # IV. Dataset and Inputs:
