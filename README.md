@@ -7,27 +7,24 @@ Since 1870 a large growth in human life expectancy has been observed in Europe. 
 #### Project Origins:
 To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](https://www.icephd.org/wiki/index.php/Jorge_Luis_Reyes_Ortiz) has developed a complete [Human Activity Recognition System](https://en.wikipedia.org/wiki/Activity_recognition) able to detect and recognize 12 different activities performed by humans in their daily living in online mode using smartphones. The recognition part of his system is based on an [SVM model](https://en.wikipedia.org/wiki/Support_vector_machine) already trained, capable of predicting activities performed by users. Necessary datasets of users’ movements will be collected from smartphone sensors ([accelerometer](https://en.wikipedia.org/wiki/Accelerometer) and [gyroscope](https://en.wikipedia.org/wiki/Gyroscope)). The datasets will be processed and fed to the prediction model to recognize performed activities.
 
-This HAR system has an offline part where includes Datasets where the prediction model was trained on
-
-The goal of this project is to build a machine learning model and a signal processing pipeline capable of processing signals collected using smart phone inertial sensors (accelerometer and gyroscope) and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier.
-
-
-
 #### Project Overview:
-Here we should mention The George luis ortiz APP and online vs offline mode.
+To build the final model embedded in this HAR system. An offline version of this system needs to be created for two reasons:
+- 1. To construct the signal processing pipeline.
+- 2. To build the train-test pipelines and to apply model hyperparameters tuning.
+This offline version includes original datasets where the model will be trained.
 
-
+The goal of this project is to build a machine learning model and a signal processing pipeline in offline mode capable of processing signals collected using smart phone inertial sensors (accelerometer and gyroscope) and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier
 
 # II. Software Requirements:
 This project requires **Python 3.5 ** and the following Python libraries installed:
 - [Python 3.5](https://www.python.org/download/releases/3.0/) 
 - [NumPy](http://www.numpy.org/)  , [SciPy](https://www.scipy.org/) , [Pandas](https://pandas.pydata.org/) , [matplotlib](http://matplotlib.org/)
 - [Statsmodel](http://www.statsmodels.org/stable/index.html)  , [Spectrum](https://pypi.org/project/spectrum/) , [scikit-learn](http://scikit-learn.org/stable/)
-
+#### Install:
 We recommend to install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains some of the necessary libraries and software for this project make to install an Anaconda environment that includes python 3.x . 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-#### Install:
 
+You could import the used environment via the YAML file.
 
 
 # III. Project Architecture:
