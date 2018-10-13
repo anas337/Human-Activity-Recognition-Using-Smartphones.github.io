@@ -48,8 +48,8 @@ This repository includes three main directories and 7 files:
 ### III-2. Notebooks:
 
 	- `Part_I--Signal-Processing-Pipeline.ipynb`: This is jupyter notebook file which contains the signal processing 
-	                                              pipeline, visualizations and detailed analysis of each step performed 
-						      in this part.	
+	                                              pipeline, visualizations and detailed analysis of each step 
+						      performed in this part.	
 	
 	- `Part_II--Machine-Learning-Part.ipynb`:  This is jupyter notebook file which contains  python code related to 
 	                                           machine learning, visualizations and detailed analysis of each step 
