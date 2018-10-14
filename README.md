@@ -90,7 +90,9 @@ Resulted Signals are:  `total_acc_XYZ` and `Gyro_XYZ`.
 
 ##### Gravity filtering:
 Similarly, the acceleration signal `total-acc-XYZ` was then separated into body and gravity acceleration signals `(tBodyAcc-XYZ and tGravityAcc-XYZ)` using another `low pass Butterworth filter` with a corner frequency of `0.3 Hz`. Since the gravitational force is assumed to have only low frequency components.
-Resulted components are: `total_acc-XYZ` ==> `tBody_acc-XYZ` + `tGravity_acc-XYZ`
+
+
+Resulted components are:  `total_acc-XYZ` ==> `tBody_acc-XYZ` + `tGravity_acc-XYZ`
 
 ### D. Activity Selection:
 From the processed signals above presented in the picture above, they extract data points and activity labels related only to the first six basic activities which are: `standing`, `sitting`, `lying`, `walking`, `walking downstairs` and `walking upstairs` to build the first version of this dataset.
@@ -98,14 +100,10 @@ In the second version which concerns basic activities and postural transitions a
 
 ### E. Feature Selection:
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (`tBodyAccJerk-XYZ` and `tBodyGyroJerk-XYZ`). Also, the magnitude of these three-dimensional signals was calculated using the Euclidean norm (`tBodyAccMag`, `tGravityAccMag`, `tBodyAccJerkMag`, `tBodyGyroMag`, `tBodyGyroJerkMag`). 
-Finally, a Fast Fourier Transform `(FFT)` was applied to some of these signals producing `fBodyAcc-XYZ`, `fBodyAccJerk-XYZ`, `fBodyGyro-XYZ`, `fBodyAccJerkMag`, `fBodyGyroMag`, `fBodyGyroJerkMag`. (Note the 'f' to indicate frequency domain signals). 
-These signals were used to estimate variables of the feature vector for each pattern:  
-`'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.`
+Finally, a Fast Fourier Transform `(FFT)` was applied to some of these signals producing `fBodyAcc-XYZ`, `fBodyAccJerk-XYZ`, `fBodyGyro-XYZ`, `fBodyAccJerkMag`, `fBodyGyroMag`, `fBodyGyroJerkMag`.The `f` to indicate frequency domain signals). 
 
 ### F. Windowing:
 These features were then sampled in fixed-width sliding windows of `2.56` sec and `50%` overlap `(128 readings/window)`.
 
 ### G. Features Generation:
 From each window, a vector of 561 features was obtained by calculating variables from the time and frequency domain.
-
-
