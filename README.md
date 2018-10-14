@@ -72,33 +72,40 @@ This repository includes three main directories and 7 files:
 ### . The general process:
 
 ### A. The Experiment:
-The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs). The experiment also included postural transitions that occurred between the static postures. These are: stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit, stand-to-lie, and lie-to-stand. 
-All the participants were wearing a smartphone (Samsung Galaxy S II) on the waist during the experiment execution. They captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz using the embedded accelerometer and gyroscope of the device. The experiments were video-recorded to label the data manually. The resulted dataset stored in the directory `Raw-Data` could be considered as the original labelled dataset and from it different subsets would be generated.
-### B. Data Splitting:
-This `Raw-Data` was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
-### C. Signal Processing:
-##### Noise filtering:
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals t_Acc-XYZ and t_Gyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
-1-	Median Filter:  was applied to reduce background noise
-2-	A 3rd order Low pass Butterworth filter with a cut-off, frequency = 20hz was applied to remove high frequency noise.
-Resulted Signals are:  total_acc_XYZ and Gyro_XYZ.
-##### Gravity filtering:
-Similarly, the acceleration signal total-acc-XYZ was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. Since the gravitational force is assumed to have only low frequency components.
-Resulted components are: total_acc-XYZ ==> tBody_acc-XYZ + tGravity_acc-XYZ
+The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (`standing`, `sitting`, `lying`) and three dynamic activities (`walking`, `walking downstairs` and `walking upstairs`). The experiment also included postural transitions that occurred between the static postures. These are: `stand-to-sit`, `sit-to-stand`, `sit-to-lie`, `lie-to-sit`, `stand-to-lie`, and `lie-to-stand`. 
+All the participants were wearing a smartphone (Samsung Galaxy S II) on the waist during the experiment execution. They captured `3-axial linear acceleration` and `3-axial angular velocity `at a constant rate of `50Hz` using the embedded accelerometer and gyroscope of the device. The experiments were video-recorded to label the data manually. The resulted dataset stored in the directory `Raw-Data` could be considered as the original labelled dataset and from it different subsets would be generated.
 
+### B. Data Splitting:
+This `Raw-Data` was randomly partitioned into two sets, where `70%` of the volunteers was selected for generating the training data and `30%` the test data.
+
+### C. Signal Processing:
+
+##### Noise filtering:
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals `t_Acc-XYZ` and `t_Gyro-XYZ`. These time domain signals (prefix 't' to denote time) were captured at a constant rate of `50 Hz`. Then they were filtered using a median filter and a `3rd order low pass Butterworth filter` with a corner frequency of `20 Hz` to remove noise. 
+
+1-	Median Filter:  was applied to reduce background noise.
+2-	A 3rd order Low pass Butterworth filter with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
+
+Resulted Signals are:  `total_acc_XYZ` and `Gyro_XYZ`.
+
+##### Gravity filtering:
+Similarly, the acceleration signal `total-acc-XYZ` was then separated into body and gravity acceleration signals `(tBodyAcc-XYZ and tGravityAcc-XYZ)` using another `low pass Butterworth filter` with a corner frequency of `0.3 Hz`. Since the gravitational force is assumed to have only low frequency components.
+Resulted components are: `total_acc-XYZ` ==> `tBody_acc-XYZ` + `tGravity_acc-XYZ`
 
 ### D. Activity Selection:
-From the processed signals above presented in the picture above, they extract data points and activity labels related only to the first six basic activities which are: standing, sitting, lying, walking, walking downstairs and walking upstairs to build the first version of this dataset.
-In the second version which concerns basic activities and postural transitions all the 12 activities were selected.
-### E. Feature Selection:
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also, the magnitude of these three-dimensional signals was calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-Finally, a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-### F. Windowing:
-These features were then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window).
-### G. Features Generation:
-From each window, a vector of 561 features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.
+From the processed signals above presented in the picture above, they extract data points and activity labels related only to the first six basic activities which are: `standing`, `sitting`, `lying`, `walking`, `walking downstairs` and `walking upstairs` to build the first version of this dataset.
+In the second version which concerns basic activities and postural transitions all the `12 activities` were selected.
 
+### E. Feature Selection:
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (`tBodyAccJerk-XYZ` and `tBodyGyroJerk-XYZ`). Also, the magnitude of these three-dimensional signals was calculated using the Euclidean norm (`tBodyAccMag`, `tGravityAccMag`, `tBodyAccJerkMag`, `tBodyGyroMag`, `tBodyGyroJerkMag`). 
+Finally, a Fast Fourier Transform `(FFT)` was applied to some of these signals producing `fBodyAcc-XYZ`, `fBodyAccJerk-XYZ`, `fBodyGyro-XYZ`, `fBodyAccJerkMag`, `fBodyGyroMag`, `fBodyGyroJerkMag`. (Note the 'f' to indicate frequency domain signals). 
+These signals were used to estimate variables of the feature vector for each pattern:  
+`'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.`
+
+### F. Windowing:
+These features were then sampled in fixed-width sliding windows of `2.56` sec and `50%` overlap `(128 readings/window)`.
+
+### G. Features Generation:
+From each window, a vector of 561 features was obtained by calculating variables from the time and frequency domain.
 
 
