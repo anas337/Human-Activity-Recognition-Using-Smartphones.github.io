@@ -82,8 +82,9 @@ This `Raw-Data` was randomly partitioned into two sets, where `70%` of the volun
 **Noise filtering:**
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals `t_Acc-XYZ` and `t_Gyro-XYZ`. These time domain signals (prefix 't' to denote time) were captured at a constant rate of `50 Hz`. Then they were filtered using a median filter and a `3rd order low pass Butterworth filter` with a corner frequency of `20 Hz` to remove noise. 
 
-1-	Median Filter:  was applied to reduce background noise.
-2-	A 3rd order Low pass Butterworth filter with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
+1-Median Filter:  was applied to reduce background noise.
+
+2-A 3rd order Low pass Butterworth filter with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
 
 Resulted Signals are:  `total_acc_XYZ` and `Gyro_XYZ`.
 
@@ -125,44 +126,44 @@ Under The `UCI-HAR-Dataset` Directory we have:
  1. ` ./Inertial Signals/`: This directory includes the **Semi-processed dataset** of this version
 
 
-- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
+	- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
 
-	- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity unit 'g'. Every row shows a 128-element vector. The same description applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for the Y and Z axis. 
-	
-	- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the total acceleration.  The same description applies for the `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y and Z axis
-	
-	- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. The same description applies for the `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for the Y and Z axis 
-	
-	
-	-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
-	
-	-  `y_train.txt`: Training labels
+		- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity unit 'g'. Every row shows a 128-element vector. The same description applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for the Y and Z axis. 
+
+		- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the total acceleration.  The same description applies for the `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y and Z axis
+
+		- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. The same description applies for the `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for the Y and Z axis 
 
 
+		-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
+
+		-  `y_train.txt`: Training labels
 
 
-- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following the same analogy as in ` ./Inertial Signals/train/`.
+
+
+	- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following the same analogy as in ` ./Inertial Signals/train/`.
 
 
 
 2. `./Processed-Data/` : This directory includes the **fully processed dataset** which concerns the same six activities. 
 
 
-- `X_train.txt`: Train features, each line is composed 561-feature vector with time and frequency domain variables.
+	- `X_train.txt`: Train features, each line is composed 561-feature vector with time and frequency domain variables.
 
-- `X_test.txt`:  Test features, each line is composed 561-feature vector with time and frequency domain variables.
+	- `X_test.txt`:  Test features, each line is composed 561-feature vector with time and frequency domain variables.
 
--` y_train.txt`: train activity labels, Its range is from 1 to 6
+	-` y_train.txt`: train activity labels, Its range is from 1 to 6
 
-- `y_test.txt`: test activity labels, Its range is from 1 to 6
+	- `y_test.txt`: test activity labels, Its range is from 1 to 6
 
--  `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
+	-  `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
 
-- `subject_test.txt`: testing subject identifiers, Its range is from 1 to 30
+	- `subject_test.txt`: testing subject identifiers, Its range is from 1 to 30
 
-- `features_info.txt`: Shows information about the variables used on the feature vector.
+	- `features_info.txt`: Shows information about the variables used on the feature vector.
 
--` features.txt`: includes list of all 561 features 
+	- `features.txt`: includes list of all 561 features 
 
 
 **Licence:**
@@ -172,5 +173,5 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 [1]: `Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.` 
 
 
-Note: This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+**Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
