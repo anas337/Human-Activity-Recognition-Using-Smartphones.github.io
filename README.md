@@ -108,4 +108,28 @@ These Signals were then sampled in fixed-width sliding windows of `2.56` sec and
 ### G. Features Generation:
 From each sampled window, a vector of 561 features was obtained by calculating variables from the time and frequency domain.
 
-## []
+
+### B. [Human Activity Recognition Using Smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones#)
+
+**Dataset origins: **
+
+Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
+1 - Smartlab - Non-Linear Complex Systems Laboratory DITEN - Università  degli Studi di Genova, Genoa (I-16145), Italy. 
+2 - CETpD - Technical Research Centre for Dependency Care and Autonomous Living Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain activityrecognition '@' smartlab.ws.
+
+This first version is located in `./Data/Original-Data/UCI-HAR-Dataset/`. As mentioned earlier this dataset concerns only **Basic Activities** performed by the users during the experiments. It includes two main directories and they can be used separately.
+
+**Dataset Architecture:** 
+
+Under The `UCI-HAR-Dataset` Directory we have:
+ 1. ` ./Inertial Signals/`: This directory includes a semi-processed dataset of this version
+
+- ` ./Inertial Signals/train/`:  The train folder which includes xx files.
+
+- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity unit 'g'. Every row shows a 128-element vector. The same description applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for the Y and Z axis. 
+- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the total acceleration.  The same description applies for the `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y and Z axis
+- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. The same description applies for the `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for the Y and Z axis 
+-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
+-  `y_train.txt`: Training labels
+
+- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following the same analogy as in ` ./Inertial Signals/train/`.
