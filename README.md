@@ -130,20 +130,20 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 		- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
 
-			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard 
-			                           gravity unit 'g'. Every row shows a 128-element vector. The same description 
-						   applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files 
-						   for the Y and Z axis. 
+			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis 
+			                           in standard gravity unit 'g'. Every row shows a 128-element vector.
+						   The same description applies for the `total_acc_y_train.txt` and                    
+						   `total_acc_z_train.txt` files for the Y and Z axis. 
 
-			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the 
-			                          total acceleration. The same description applies for the 
-						  `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y 
-						  and Z axis.
+			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity 
+			                           from the total acceleration. The same description applies for the
+						   `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y 
+						   and Z axis.
 
-			- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window
-			                               sample. The units are radians/second. The same description applies for 
-						       the `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for 
-						       the Y and Z axis. 
+			- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each
+			                               window sample. The units are radians/second. The same description 
+						       applies for the `body_gyro_y_train.txt` and `body_gyro_z_train.txt`
+						       files for the Y and Z axis. 
 
 
 			-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window 
@@ -154,8 +154,8 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 
 
-		- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following 
-		                                the same analogy as in ` ./Inertial Signals/train/`.
+		- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals 
+		                                following the same analogy as in ` ./Inertial Signals/train/`.
 
 
 
