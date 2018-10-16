@@ -125,7 +125,7 @@ Under The `UCI-HAR-Dataset` Directory we have:
  1. ` ./Inertial Signals/`: This directory includes a semi-processed dataset of this version
 
 
-- ` ./Inertial Signals/train/`:  The train folder which includes xx files.
+- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
 
 	- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity unit 'g'. Every row shows a 128-element vector. The same description applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for the Y and Z axis. 
 	
