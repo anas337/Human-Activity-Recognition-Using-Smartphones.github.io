@@ -52,7 +52,9 @@ This repository [Human-Activity-Recognition-Using-Smartphones](https://github.co
 	                                              pipeline, visualizations and detailed analysis of each step 
 						      performed.	
 	
-	- `Part_II--Machine-Learning-Part.ipynb`:  This is the notebook file which  related to machine learning,                                                                            visualizations and detailed analysis of each step performed                                                                              to build the final model.
+	- `Part_II--Machine-Learning-Part.ipynb`:  This is the notebook file which  related to machine learning, 
+	                                           visualizations and detailed analysis of each step performed 
+						   to build the final model.                    
 	
 
 	- `UCI_HAR_Dataset_V1.ipynb`:
@@ -128,30 +130,41 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 		- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
 
-			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard gravity unit 'g'. Every row shows a 128-element vector. The same description applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for the Y and Z axis. 
+			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis in standard 
+			                           gravity unit 'g'. Every row shows a 128-element vector. The same description 
+						   applies for the `total_acc_y_train.txt` and `total_acc_z_train.txt` files for 
+						   the Y and Z axis. 
 
-			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the total acceleration.  The same description applies for the `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y and Z axis
+			- `body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the gravity from the 
+			                          total acceleration. The same description applies for the 
+						  `body_acc_y_train.txt` and `body_acc_z_train.txt` files for the Y and Z axis.
 
-			- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. The same description applies for the `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for the Y and Z axis 
+			- `body_gyro_acc_x_train.txt`: The angular velocity vector measured by the gyroscope for each window sample.
+			                               The units are radians/second. The same description applies for the 
+						       `body_gyro_y_train.txt` and `body_gyro_z_train.txt` files for the Y and Z axis. 
 
 
-			-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30
+			-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window sample.
+			                        Its range is from 1 to 30
 
 			-  `y_train.txt`: Training labels
 
 
 
 
-		- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following the same analogy as in ` ./Inertial Signals/train/`.
+		- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals following 
+		                                the same analogy as in ` ./Inertial Signals/train/`.
 
 
 
 2. `./Processed-Data/` : This directory includes the **fully processed dataset** which concerns the same six activities. 
 
 
-		- `X_train.txt`: Train features, each line is composed 561-feature vector with time and frequency domain variables.
+		- `X_train.txt`: Train features, each line is composed 561-feature vector with time and 
+		                 frequency domain variables.
 
-		- `X_test.txt`:  Test features, each line is composed 561-feature vector with time and frequency domain variables.
+		- `X_test.txt`: Test features, each line is composed 561-feature vector with time and 
+		                frequency domain variables.
 
 		- `y_train.txt`: train activity labels, Its range is from 1 to 6
 
