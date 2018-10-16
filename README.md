@@ -108,7 +108,7 @@ These Signals were then sampled in fixed-width sliding windows of `2.56` sec and
 ### G. Features Generation:
 From each sampled window, a vector of 561 features was obtained by calculating variables from the time and frequency domain.
 
-
+-------------------------------------------------------------------------------------------------
 ### [Human Activity Recognition Using Smartphones Dataset Version 1.0](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones#)
 **Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2):**
 
