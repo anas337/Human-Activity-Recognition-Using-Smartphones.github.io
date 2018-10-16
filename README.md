@@ -16,7 +16,7 @@ To build the final model embedded in this HAR system. An offline version of this
 The goal of this project is to build a `machine learning model` and a `signal processing pipeline` in offline mode capable of processing signals collected using smart phone inertial sensors and producing useful datasets will be used as inputs of a machine learning model capable of recognizing some of human daily activities (sitting, walking …) included in the dataset (see datasets and Inputs section) with a low error rate. The signal processing pipeline and the final model could be used as a good source of information about patient’s daily activities needed by remote monitoring systems mentioned earlier
 
 # II. Software Requirements:
-This project requires **Python 3.5 ** and the following Python libraries installed:
+This project requires **Python 3.5** and the following Python libraries installed:
 - [Python 3.5](https://www.python.org/download/releases/3.0/) 
 - [NumPy](http://www.numpy.org/)  , [SciPy](https://www.scipy.org/) , [Pandas](https://pandas.pydata.org/) , [matplotlib](http://matplotlib.org/)
 - [Statsmodel](http://www.statsmodels.org/stable/index.html)  , [Spectrum](https://pypi.org/project/spectrum/) , [scikit-learn](http://scikit-learn.org/stable/)
@@ -153,11 +153,11 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 	- `X_test.txt`:  Test features, each line is composed 561-feature vector with time and frequency domain variables.
 
-	-` y_train.txt`: train activity labels, Its range is from 1 to 6
+	- `y_train.txt`: train activity labels, Its range is from 1 to 6
 
 	- `y_test.txt`: test activity labels, Its range is from 1 to 6
 
-	-  `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
+	- `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
 
 	- `subject_test.txt`: testing subject identifiers, Its range is from 1 to 30
 
