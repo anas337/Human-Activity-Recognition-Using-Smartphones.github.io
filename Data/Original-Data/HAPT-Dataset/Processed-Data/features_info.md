@@ -10,21 +10,21 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 **Time domain signals:**
----------------|---------------------------------------------------------                      
+------------------------------------------------------------------------                      
                |       Body ACC            Gravity           Body gyro
-               |
----------------|----------------------------------------------------------
-non jerked     |      tBodyAcc-XYZ    , tGravityAcc-XYZ , tBodyGyro-XYZ
-               |
----------------|----------------------------------------------------------
- jerked        |       tBodyAccJerk-XYZ,-----------------, tBodyGyroJerk-XYZ
-               |
----------------|----------------------------------------------------------
-non jerked mag        tBodyAccMag     , tGravityAccMag  , tBodyGyroMag
-
+               |                                                         
 -------------------------------------------------------------------------
- jerked mag           tBodyAccJerkMag ,-----------------, tBodyGyroJerkMag
-
+non jerked     |      tBodyAcc-XYZ    , tGravityAcc-XYZ , tBodyGyro-XYZ
+               |                                                                  
+-------------------------------------------------------------------------
+ jerked        |     tBodyAccJerk-XYZ,-----------------, tBodyGyroJerk-XYZ
+               |                                                                                 
+-------------------------------------------------------------------------
+non jerked mag |       tBodyAccMag     , tGravityAccMag  , tBodyGyroMag
+               |                                                         
+-------------------------------------------------------------------------
+ jerked mag    |       tBodyAccJerkMag ,-----------------, tBodyGyroJerkMag
+               |                                                                         
 -------------------------------------------------------------------------
 
 
