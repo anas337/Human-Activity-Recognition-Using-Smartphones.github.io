@@ -33,14 +33,14 @@ This repository [Human-Activity-Recognition-Using-Smartphones](https://github.co
 
 ### III-1. Directories:
 
-	- `\Description-Images\`: This folder includes images used for aesthetic purposes
+	- `\Description-Images\`: This folder includes images used for aesthetic purposes.
 	
 	- `\Reports\`: Contains an HTML version of each notebook + 2 reports
 	
 	- `.\Data\`: Under this Directory you will find all Datasets used in this project.
 		- `.\Original-Data\`: contains the original Datasets brought by Jorge Luis Reyes Ortiz.	
-			- `. \UCI-HAR-Dataset\`:  The first version of this Dataset V 1.0
-			- `. \HAPT-Dataset\`: The second version V 2.0
+			- `. \UCI-HAR-Dataset\`:  The first version of this Dataset V 1.0.
+			- `. \HAPT-Dataset\`: The second version V 2.1.
 		
 		
 		-`.\ New Data\`: Under this directory you will find the processed datasets generated from the original 
@@ -82,11 +82,11 @@ This `Raw-Data` was randomly partitioned into two sets, where `70%` of the volun
 ### C. Signal Processing:
 
 **Noise filtering:**
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals `t_Acc-XYZ` and `t_Gyro-XYZ`. These time domain signals (prefix 't' to denote time) were captured at a constant rate of `50 Hz`. Then they were filtered using a median filter and a `3rd order low pass Butterworth filter` with a corner frequency of `20 Hz` to remove noise. 
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals `t_Acc-XYZ` and `t_Gyro-XYZ`. These time domain signals (**prefix 't' to denote time**) were captured at a constant rate of `50 Hz`. Then they were filtered using a median filter and a `3rd order low pass Butterworth filter` with a corner frequency of `20 Hz` to remove noise. 
 
-1-Median Filter:  was applied to reduce background noise.
+**1- Median Filter:**  was applied to reduce background noise.
 
-2-A 3rd order Low pass Butterworth filter with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
+**2- 3rd order Low pass Butterworth filter** with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
 
 Resulted Signals are:  `total_acc_XYZ` and `Gyro_XYZ`.
 
@@ -117,7 +117,9 @@ From each sampled window, a vector of 561 features was obtained by calculating v
 
 **[1] -** `Smartlab - Non-Linear Complex Systems Laboratory DITEN - Università  degli Studi di Genova, Genoa (I-16145), Italy.` 
 
-**[2] -** `CETpD - Technical Research Centre for Dependency Care and Autonomous Living Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain activityrecognition '@' smartlab.ws.`
+**[2] -** `CETpD - Technical Research Centre for Dependency Care and Autonomous Living Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain.`
+
+**@mail:** `activityrecognition@smartlab.ws`
 
 This first version is located in `./Data/Original-Data/UCI-HAR-Dataset/`. As mentioned earlier this dataset concerns only **Basic Activities** performed by the users during the experiments. It includes two main directories and they can be used separately.
 
@@ -125,10 +127,10 @@ This first version is located in `./Data/Original-Data/UCI-HAR-Dataset/`. As men
 
 Under The `UCI-HAR-Dataset` Directory we have:
  
- 1. ` ./Inertial Signals/`: This directory includes the **Semi-processed dataset** of this version
+ 1. ` ./Inertial Signals/`: This directory includes the **Semi-processed dataset** of this version.
 
 
-		- ` ./Inertial Signals/train/`:  The train folder includes 11 files.
+		- ` ./Inertial-Signals/train/`:  The train folder includes 11 files.
 
 			- `total_acc_x_train.txt`: The acceleration signal from the smartphone accelerometer X axis 
 			                           in standard gravity unit 'g'. Every row shows a 128-element vector.
@@ -154,8 +156,8 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 
 
-		- ` ./Inertial Signals/test/*`: This folder includes necessary testing files related  inertial signals 
-		                                following the same analogy as in ` ./Inertial Signals/train/`.
+		- ` ./Inertial-Signals/test/*`: This folder includes necessary testing files of inertial signals 
+		                                following the same analogy as in `./Inertial Signals/train/`.
 
 
 
@@ -192,7 +194,7 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 **Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 ----------------------------------------------------------------------------------------------------------
-[Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.1]( https://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
+### [Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.1]( https://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
 
 **Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Luca Oneto(1) and Xavier Parra(2)**
 
@@ -205,7 +207,7 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 Website: **`www.smartlab.ws`**
 
 This dataset is an extended version of the [UCI Human Activity Recognition Using smartphones Dataset V 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) mentioned earlier.
-This version provides the original signals captured from the smartphone sensors mentioned earlier `Raw-Data`, instead of the ones semi-processed and sampled into windows located in `Inertial signals` directory which were provided in version 1.0. This change was done in order to be able to make online tests with the data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset. This Dataset includes two main directories and they can be used separately.
+This version provides the original signals captured from the smartphone sensors mentioned earlier `Raw-Data`, instead of the ones semi-processed and sampled into windows located in `Inertial-signals` directory which were provided in version 1.0. This change was done in order to be able to make online tests with the data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset. This Dataset includes two main directories and they can be used separately.
 
 **Dataset Architecture:**
 
@@ -213,12 +215,18 @@ Under The `HAPT-Dataset` Directory we have:
 
 1. `./Raw-Data/`:  This the original data (unprocessed data) obtained directly from the set of experiments after activity labelling . It includes Raw triaxial signals from the accelerometer and gyroscope of all trials with participants. This Directory includes 123 files:
 		
-		-  61 file are :`Raw-Data/acc_expXX_userYY.txt`: The raw triaxial acceleration signal for the experiment number XX and associated to the user number YY. Every row is one acceleration sample (three axis)[X,Y,Z] captured at a frequency of 50Hz. 
+		- **61 acc files are**: `Raw-Data/acc_expXX_userYY.txt`: The raw triaxial acceleration signal
+		                         for the experiment number XX and associated to the user number YY.
+				         Every row is one acceleration sample (three axis)[X,Y,Z] captured 
+				         at a frequency of 50Hz. 
 		
-		- 61 file are: `Raw-Data/gyro_expXX_userYY.txt`: The raw triaxial angular speed signal for the experiment number XX and associated to the user number YY. Every row is one angular velocity sample (three axis)[X,Y,Z] captured at a frequency of 50Hz. 
+		- **61 gyro files are**: `Raw-Data/gyro_expXX_userYY.txt`: The raw triaxial angular
+		                          speed signal for the experiment number XX and associated to 
+					  the user number YY. Every row is one angular velocity sample 
+					  (three axis)[X,Y,Z] captured at a frequency of 50Hz. 
 		
-		- The labels of all the performed activities.
-		- 1 last file is :`RawData/labels.txt`: includes labels of all the performed activities (1 per row). 
+		- **One last file is** :`RawData/labels.txt`: includes labels of all the performed 
+		                         activities (1 per row). 
 			- Column 1: experiment number ID, 
 			- Column 2: user number ID,
 			- Column 3: activity number ID 
@@ -228,13 +236,15 @@ Under The `HAPT-Dataset` Directory we have:
  
 2. `./ Processed-Data/`: This Directory includes the **fully processed dataset** which concerns all The twelve activities performed by users in the experiment.
 		
-		-  `X_train.txt` : Train features, each line is composed 561-feature vector with time frequency domain variables.
+		- `X_train.txt` : Train features, each line is composed 561-feature vector with time and 
+		                  frequency domain variables.
 		
-		-  `X_test.txt` : Test features, each line is composed 561-feature vector with time frequency domain variables.
+		- `X_test.txt` : Test features, each line is composed 561-feature vector with time and 
+		                 frequency domain variables.
 		
-		-  `y_train.txt`: train activity labels, its range is from 1 to 12
+		- `y_train.txt`: train activity labels, its range is from 1 to 12
 		
-		-  `y_test.txt`: test activity labels, its range is from 1 to 12
+		- `y_test.txt`: test activity labels, its range is from 1 to 12
 		
 		- `subject_id_train.txt`: training subject identifiers, Its range is from 1 to 30
 		
@@ -247,9 +257,9 @@ Under The `HAPT-Dataset` Directory we have:
 
 **License:**
 
-Use of this dataset in publications must be acknowledged by referencing the following publications:
+Use of this dataset in publications must be acknowledged by referencing the following publications **[1]**:
 
-- `Jorge-L. Reyes-Ortiz, Luca Oneto, Albert Samà, Xavier Parra, Davide Anguita. Transition-Aware Human Activity Recognition Using Smartphones. Neurocomputing. Springer 2015.`
+**[1]** - `Jorge-L. Reyes-Ortiz, Luca Oneto, Albert Samà, Xavier Parra, Davide Anguita. Transition-Aware Human Activity Recognition Using Smartphones. Neurocomputing. Springer 2015.`
 
 **Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
