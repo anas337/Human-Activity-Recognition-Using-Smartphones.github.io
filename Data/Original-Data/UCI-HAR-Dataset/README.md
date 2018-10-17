@@ -21,58 +21,59 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 Inertial-Signals: The following files are available for the train and test data. Their descriptions are equivalent.
 
-   - `Inertial-Signals/train/total_acc_x_train.txt`: The acceleration signal from the smartphone 
-                                                      accelerometer X axis in standard gravity units `g`. 
-                                                      Every row shows a 128 element vector. The same 
-                                                      description applies for the `total_acc_x_train.txt` 
-                                                      and `total_acc_z_train.txt` files for the Y and Z axis. 
+            - `Inertial-Signals/train/total_acc_x_train.txt`: The acceleration signal from the smartphone 
+                                                               accelerometer X axis in standard gravity units `g`. 
+                                                               Every row shows a 128 element vector. The same 
+                                                               description applies for the `total_acc_x_train.txt` 
+                                                               and `total_acc_z_train.txt` files for the Y and Z axis. 
 
-   - `Inertial-Signals/train/body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the 
-                                                    gravity from the total acceleration. 
+            - `Inertial-Signals/train/body_acc_x_train.txt`: The body acceleration signal obtained by subtracting the 
+                                                             gravity from the total acceleration. 
 
-   - `Inertial Signals/train/body_gyro_x_train.txt`: The angular velocity vector measured by the gyroscope 
-                                                     for each window sample. The units are radians/second.
+            - `Inertial Signals/train/body_gyro_x_train.txt`: The angular velocity vector measured by the gyroscope 
+                                                              for each window sample. The units are radians/second.
 
 
 #### Processed-Data:
 
-   - `Processed-Data/features_info.txt`: Shows information about the variables used on the feature vector.
+            - `Processed-Data/features_info.txt`: Shows information about the variables used on the feature vector.
 
-   - `Processed-Data/features.txt`: List of all features.
+            - `Processed-Data/features.txt`: List of all features.
 
-   - `Processed-Data/X_train.txt`: Training set.
+            - `Processed-Data/X_train.txt`: Training set.
 
-   - `Processed-Data/X_test.txt`: Testing set.
+            - `Processed-Data/X_test.txt`: Testing set.
 
 
 The following files are available for `Inertial-Signals` and `Processed-Data` . Their descriptions are equivalent:
 
-   - `README.txt'
+            - `README.txt`
 
-   - `activity_labels.txt`: Links the class labels with their activity name.
+            - `activity_labels.txt`: Links the class labels with their activity name.
 
-   - `subject-train.txt`: Each row identifies the subject who performed the activity for each window 
-                          sample. Its range is from 1 to 30
+            - `subject-train.txt`: Each row identifies the subject who performed the activity for each window 
+                                   sample. Its range is from 1 to 30
 
-   - `subject-test.txt`: Each row identifies the subject who performed the activity for each window 
-                         sample. Its range is from 1 to 30
+            - `subject-test.txt`: Each row identifies the subject who performed the activity for each window 
+                                  sample. Its range is from 1 to 30
 
-   - `y_train.txt`: Training labels.
+            - `y_train.txt`: Training labels.
 
-   - `y_test.txt`: Testing labels.
+            - `y_test.txt`: Testing labels.
 
  
-**Notes:** 
- - Features mentioned in Processed-Data are normalized and bounded within [-1,1].
- - Each feature vector is a row on the text file.
- - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
- - The gyroscope units are rad/sec.
- - A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: http://www.youtube.com/watch?v=XOEN9W05_4A
+**Notes:**
+
+- Features mentioned in Processed-Data are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+- The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
+- The gyroscope units are rad/sec.
+- A video of the experiment including an example of the 6 recorded activities with one of the participants can be seen in the following link: http://www.youtube.com/watch?v=XOEN9W05_4A
 
 For more information about this dataset please contact: `activityrecognition@smartlab.ws`
 
 **License:**
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+Use of this dataset in publications must be acknowledged by referencing the following publication [1]: 
 
 **[1]** - `Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.` 
 
