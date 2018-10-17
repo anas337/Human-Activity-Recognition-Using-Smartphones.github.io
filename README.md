@@ -29,7 +29,7 @@ Here is an YAML File that includes environement dependencies used in this projec
 
 # III. Project Architecture:
 
-This repository [Human-Activity-Recognition-Using-Smartphones](https://github.com/anas337/Human-Activity-Recognition-Using-Smartphones) includes three main directories and 7 files:
+This repository [Human-Activity-Recognition-Using-Smartphones](https://github.com/anas337/Human-Activity-Recognition-Using-Smartphones) includes three main directories and 3 files:
 
 ### III-1. Directories:
 
@@ -56,13 +56,6 @@ This repository [Human-Activity-Recognition-Using-Smartphones](https://github.co
 	                                           visualizations and detailed analysis of each step performed 
 						   to build the final model.                    
 	
-
-	- `UCI_HAR_Dataset_V1.ipynb`:
-	- `UCI_HAR_Dataset_V1_Inertial_Signals.ipynb`:
-	
-
-	- `HAPT_RawData_statistics_V2.ipynb`
-	- `HAPT_ML_V2.ipynb`
 	
 	- `README.md` : It contains a short description of this project and necessary steps to 
 	                run it successfully.
