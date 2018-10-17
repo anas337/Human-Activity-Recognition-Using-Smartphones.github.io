@@ -178,7 +178,8 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 		- `features_info.txt`: Shows information about the variables used on the feature vector.
 
-		- `features.txt`: includes list of all 561 features 
+		- `features.txt`: includes list of all 561 features
+`README.md`:
 
 
 **Licence:**
@@ -189,4 +190,67 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 
 
 **Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+----------------------------------------------------------------------------------------------------------
+[Smartphone-Based Recognition of Human Activities and Postural Transitions Data Set Version 2.1]( https://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions)
+
+**Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Luca Oneto(1) and Xavier Parra(2)**
+
+[1] - `Smartlab, DIBRIS - Università  degli Studi di Genova, Genoa (16145), Italy.` 
+
+[2] - `CETpD - Universitat Politècnica de Catalunya. Vilanova i la Geltrú (08800), Spain.`
+
+@mail: **`har@smartlab.ws`**
+
+Website: **`www.smartlab.ws`**
+
+This dataset is an extended version of the [UCI Human Activity Recognition Using smartphones Dataset V 1.0](https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) mentioned earlier.
+This version provides the original signals captured from the smartphone sensors mentioned earlier `Raw-Data`, instead of the ones semi-processed and sampled into windows located in `Inertial signals` directory which were provided in version 1.0. This change was done in order to be able to make online tests with the data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset. This Dataset includes two main directories and they can be used separately.
+
+**Dataset Architecture:**
+
+Under The `HAPT-Dataset` Directory we have: 
+
+1. `./Raw-Data/`:  This the original data (unprocessed data) obtained directly from the set of experiments after activity labelling . It includes Raw triaxial signals from the accelerometer and gyroscope of all trials with participants. This Directory includes 123 files:
+		
+		-  61 file are :`Raw-Data/acc_expXX_userYY.txt`: The raw triaxial acceleration signal for the experiment number XX and associated to the user number YY. Every row is one acceleration sample (three axis)[X,Y,Z] captured at a frequency of 50Hz. 
+		
+		- 61 file are: `Raw-Data/gyro_expXX_userYY.txt`: The raw triaxial angular speed signal for the experiment number XX and associated to the user number YY. Every row is one angular velocity sample (three axis)[X,Y,Z] captured at a frequency of 50Hz. 
+		
+		- The labels of all the performed activities.
+		- 1 last file is :`RawData/labels.txt`: includes labels of all the performed activities (1 per row). 
+			- Column 1: experiment number ID, 
+			- Column 2: user number ID,
+			- Column 3: activity number ID 
+			- Column 4: Label start point (in number of signal log samples (recorded at 50Hz))
+			- Column 5: Label end point (in number of signal log samples)
+ 
+ 
+2. `./ Processed-Data/`: This Directory includes the **fully processed dataset** which concerns all The twelve activities performed by users in the experiment.
+		
+		-  `X_train.txt` : Train features, each line is composed 561-feature vector with time frequency domain variables.
+		
+		-  `X_test.txt` : Test features, each line is composed 561-feature vector with time frequency domain variables.
+		
+		-  `y_train.txt`: train activity labels, its range is from 1 to 12
+		
+		-  `y_test.txt`: test activity labels, its range is from 1 to 12
+		
+		- `subject_id_train.txt`: training subject identifiers, Its range is from 1 to 30
+		
+		- `subject_id_test.txt`: testing subject identifiers, Its range is from 1 to 30
+		
+		- `features_info.txt`: Shows information about the variables used on the feature vector.
+		
+		- `features.txt`: includes list of all 561 features
+- `README.md`:
+
+**License:**
+
+Use of this dataset in publications must be acknowledged by referencing the following publications:
+
+- `Jorge-L. Reyes-Ortiz, Luca Oneto, Albert Samà, Xavier Parra, Davide Anguita. Transition-Aware Human Activity Recognition Using Smartphones. Neurocomputing. Springer 2015.`
+
+**Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
 
