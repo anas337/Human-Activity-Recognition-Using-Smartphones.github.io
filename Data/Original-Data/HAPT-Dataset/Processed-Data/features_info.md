@@ -23,21 +23,13 @@ These signals were used to estimate variables of the feature vector for each pat
 
 
 **Frequency Domain signals:**
---------------------------------------------------------------------------
-                      Body ACC            Gravity           Body gyro
---------------------------------------------------------------------------
-non jerked          fBodyAcc-XYZ    ,-------------------,fBodyGyro-XYZ
 
---------------------------------------------------------------------------
-jerked              fBodyAccJerk-XYZ,-------------------,  -------------
-
---------------------------------------------------------------------------
-non jerked mag      fBodyAccMag     ,-------------------,fBodyGyroMag
-
---------------------------------------------------------------------------
-jerked mag          fBodyAccJerkMag ,-------------------,fBodyGyroJerkMag
-
---------------------------------------------------------------------------
+| Signal types| Body ACC|   Gravity   |Body gyro|
+| :--------:  |:------:	|:-----------:|:-----------:|
+| non jerked  |fBodyAcc-XYZ|   |fBodyGyro-XYZ|
+| jerked | fBodyAccJerk-XYZ| | |
+|non jerked mag | fBodyAccMag |  |fBodyGyroMag|
+|jerked mag     |     fBodyAccJerkMag|   |fBodyGyroJerkMag|
 
 
 The set of variables that were estimated from these signals are: 
