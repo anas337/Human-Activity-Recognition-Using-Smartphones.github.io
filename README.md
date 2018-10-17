@@ -127,7 +127,7 @@ This first version is located in `./Data/Original-Data/UCI-HAR-Dataset/`. As men
 
 Under The `UCI-HAR-Dataset` Directory we have:
  
- 1. ` ./Inertial Signals/`: This directory includes the **Semi-processed dataset** of this version.
+ 1. ` ./Inertial Signals/`: This directory includes the **Semi-processed features** of this version.
 
 
 		- ` ./Inertial-Signals/train/`:  The train folder includes 11 files.
@@ -148,20 +148,12 @@ Under The `UCI-HAR-Dataset` Directory we have:
 						       files for the Y and Z axis. 
 
 
-			-  `subject_train.txt`: Each row identifies the subject who performed the activity for each window 
-			                        sample. Its range is from 1 to 30
-
-			-  `y_train.txt`: Training labels
-
-
-
-
 		- ` ./Inertial-Signals/test/*`: This folder includes necessary testing files of inertial signals 
 		                                following the same analogy as in `./Inertial Signals/train/`.
 
 
 
-2. `./Processed-Data/` : This directory includes the **fully processed dataset** which concerns the same six activities. 
+2. `./Processed-Data/` : This directory includes the **fully processed features** which concerns the same six activities. 
 
 
 		- `X_train.txt`: Train features, each line is composed 561-feature vector with time and 
@@ -169,26 +161,29 @@ Under The `UCI-HAR-Dataset` Directory we have:
 
 		- `X_test.txt`: Test features, each line is composed 561-feature vector with time and 
 		                frequency domain variables.
-
-		- `y_train.txt`: train activity labels, Its range is from 1 to 6
-
-		- `y_test.txt`: test activity labels, Its range is from 1 to 6
-
-		- `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
-
-		- `subject_test.txt`: testing subject identifiers, Its range is from 1 to 30
-
+				
 		- `features_info.txt`: Shows information about the variables used on the feature vector.
 
 		- `features.txt`: includes list of all 561 features
-`README.md`:
 
+
+- `y_train.txt`: train activity labels, Its range is from 1 to 6
+
+- `y_test.txt`: test activity labels, Its range is from 1 to 6
+
+- `subject_train.txt`: training subject identifiers, Its range is from 1 to 30
+
+- `subject_test.txt`: testing subject identifiers, Its range is from 1 to 30
+
+- `activity_labels.txt`:
+
+- `README.md`:
 
 **Licence:**
 
 Use of this dataset in publications must be acknowledged by referencing the following publication [1]:  
 
-[1]: `Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.` 
+[1]- `Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.` 
 
 
 **Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
@@ -253,6 +248,8 @@ Under The `HAPT-Dataset` Directory we have:
 		- `features_info.txt`: Shows information about the variables used on the feature vector.
 		
 		- `features.txt`: includes list of all 561 features
+
+- `activity_labels.txt`:
 - `README.md`:
 
 **License:**
