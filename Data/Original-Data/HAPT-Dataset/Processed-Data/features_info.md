@@ -1,4 +1,4 @@
-# Feature Selection 
+## Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -12,14 +12,19 @@ These signals were used to estimate variables of the feature vector for each pat
 **Time domain signals:**
 ------------------------------------------------------------------------                      
                       Body ACC            Gravity           Body gyro
+
 -------------------------------------------------------------------------
- non jerked           tBodyAcc-XYZ    , tGravityAcc-XYZ , tBodyGyro-XYZ
+non jerked           tBodyAcc-XYZ    , tGravityAcc-XYZ , tBodyGyro-XYZ
+
 -------------------------------------------------------------------------
  jerked               tBodyAccJerk-XYZ,-----------------, tBodyGyroJerk-XYZ
+
 -------------------------------------------------------------------------
 non jerked mag        tBodyAccMag     , tGravityAccMag  , tBodyGyroMag
+
 -------------------------------------------------------------------------
  jerked mag           tBodyAccJerkMag ,-----------------, tBodyGyroJerkMag
+
 -------------------------------------------------------------------------
 
 
@@ -29,12 +34,16 @@ non jerked mag        tBodyAccMag     , tGravityAccMag  , tBodyGyroMag
                       Body ACC            Gravity           Body gyro
 --------------------------------------------------------------------------
 non jerked          fBodyAcc-XYZ    ,-------------------,fBodyGyro-XYZ
+
 --------------------------------------------------------------------------
 jerked              fBodyAccJerk-XYZ,-------------------,  -------------
+
 --------------------------------------------------------------------------
 non jerked mag      fBodyAccMag     ,-------------------,fBodyGyroMag
+
 --------------------------------------------------------------------------
 jerked mag          fBodyAccJerkMag ,-------------------,fBodyGyroJerkMag
+
 --------------------------------------------------------------------------
 
 
