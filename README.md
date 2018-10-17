@@ -264,3 +264,25 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 **Note:** This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 
+## IV-2. New Datasets:
+
+The New Datasets are the results of applying my own signal processing pipeline to Raw-Data. This directory includes one main folder ` full_Datasets_type_I_and_II `:
+
+**`Type I `:** to denote V 1.0 which includes Basic activities only.
+
+**`Type II `:** to denote V 2.1 which includes Both Basic Activities and Postural Transitions.
+
+- ` ./New-Data/full_Datasets_type_I_and_II/ `: includes Datasets produced by the signal processing pipeline using ` Raw-Data ` only. All parts are fully processed. Each line(observation) includes XXX features + the **subject_Id** and the **activity label** related the observation.
+		
+		- ` Dataset_I_part1.csv `: The first 5000 rows of Dataset type I 
+		
+		- ` Dataset_I_part2.csv `: The rest of rows of Dataset type I 
+		
+		- ` Dataset_II_part1.csv `: The first 6000 rows of Dataset type 
+		
+		- ` Dataset_II_part2.csv `: The rest of rows of Dataset type II 
+
+	- ` new features info.txt `: Includes info about features(columns) in both Datasets type I and type II
+	
+	- ` new_features.txt `: the full list of features (column names) of Dataset type I and II
+
