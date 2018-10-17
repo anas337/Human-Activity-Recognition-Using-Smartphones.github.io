@@ -278,11 +278,27 @@ The New Datasets are the results of applying my own signal processing pipeline t
 		
 		- ` Dataset_I_part2.csv `: The rest of rows of Dataset type I 
 		
-		- ` Dataset_II_part1.csv `: The first 6000 rows of Dataset type 
+		- ` Dataset_II_part1.csv `: The first 6000 rows of Dataset type II
 		
 		- ` Dataset_II_part2.csv `: The rest of rows of Dataset type II 
 
-	- ` new features info.txt `: Includes info about features(columns) in both Datasets type I and type II
+	- `new features info.txt `: Includes info about features(columns) in both Datasets type I and type II
 	
-	- ` new_features.txt `: the full list of features (column names) of Dataset type I and II
+	- `new_features.txt `: the full list of features (column names) of Dataset type I and II
 
+# V. Running the code:
+
+In the Terminal or Command Prompt, navigate to the folder containing the project files which contains this `README.md` and then use the command `jupyter notebook file_name.ipynb` to open up a browser window or tab to work with your notebook. Alternatively, you can use the command `jupyter notebook` or `ipython notebook` and navigate to the notebook file in the browser window that opens.
+
+If you want to generate RawData statistics and overwrite the new datasets type I and II you should run the `Part_I--Signal-Processing-Pipeline.ipynb`. 
+
+If you want to generate new datasets type I and II statistics and its machine learning results you should run the second notebook `Part_II--Machine-Learning-Part.ipynb`.
+
+**Notes:**
+- Please before running any notebook pay attention to running durations first (durations were computed on a laptop core i5 8Gbs of RAM).
+
+- The Data owners didn't provide the signal processing code. The signal processing pipeline was developed using only explanations provided in both original datasets (Version 1.O and 2.1). As a result The General Process mentioned earlier is a little bit different from the one coded in the signal processing pipeline.
+
+- The windowing methods used in the signal processing pipeline differs depending on the type of the data generated. Reports included in this reporsitery provides detailed information about these differences.
+
+Please If you have any ambiguity about any part of this project or just want to have more info about this subject don't hestitate to contact me at: `abdessamad.anass@gmail.com` 
