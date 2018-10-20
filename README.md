@@ -94,12 +94,20 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 ![image2]
 ![image3]
 
+|  User 01 inertial signals|
+| :--------: |
+| ![image4]  |
 
-![image4]
-![image5]
-![image6]
-![image7]
-![image8]
+
+| Walking| Standing | 
+| :--------:  |:------:	|
+| ![image5]  	|  ![image6] |
+
+
+| Sitting| Lying| 
+| :--------:  |:------:	|
+|  ![image7]  |![image8] |
+
 
 
 ### B. Data Splitting:
@@ -263,10 +271,14 @@ Under The `HAPT-Dataset` Directory we have:
 			- Column 5: Label end point (in number of signal log samples)
 
 
-![image11]
-![image12]
-![image13]
-![image14]
+| Number of rows per Experience|Number of rows per activity  | 
+| :--------:  |:------:	|
+| ![image11]  	|  ![image12] |
+
+| Number of useful rows per Experience| Mean time in seconds per Activity | 
+| :--------:  |:------:	|
+| ![image13]  	|  ![image14] |
+
 
 
 2. `./ Processed-Data/`: This Directory includes the **fully processed dataset** which concerns all The twelve activities performed by users in the experiment.
