@@ -92,7 +92,7 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 
 
 ![image2]
-![image3]
+
 
 |  User 01 inertial signals|
 | :--------: |
@@ -270,6 +270,11 @@ Under The `HAPT-Dataset` Directory we have:
 			- Column 4: Label start point (in number of signal log samples (recorded at 50Hz))
 			- Column 5: Label end point (in number of signal log samples)
 
+
+
+| Raw Data Samples| 
+| :--------:  |
+|![image3] |
 
 | Number of rows per Experience|Number of rows per activity  | 
 | :--------:  |:------:	|
