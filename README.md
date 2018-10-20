@@ -6,7 +6,7 @@
 [image5]: ./Description-Images/activity01.PNG "image5"
 [image6]: ./Description-Images/Standing.PNG "image6"
 [image7]: ./Description-Images/sitting.PNG "image7"
-[image8]: ./Description-Images/lying.PNG "image8"
+[image8]: ./Description-Images/Lying.PNG "image8"
 [image9]: ./Description-Images/med-filtered.PNG "image9"
 [image10]: ./Description-Images/original-signal-processing.bmp "image10"
 [image11]: ./Description-Images/rows-per-exp.PNG "image11"
@@ -93,6 +93,8 @@ All the participants were wearing a smartphone (Samsung Galaxy S II) on the wais
 
 ![image2]
 ![image3]
+
+
 ![image4]
 ![image5]
 ![image6]
