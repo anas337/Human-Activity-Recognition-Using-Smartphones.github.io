@@ -1,3 +1,20 @@
+[//]: # (Image References)
+[image1]: ./Description-Images/online-har-system-1.bmp "image1"
+[image2]: ./Description-Images/Raw-Data.bmp "image2"
+[image3]: ./Description-Images/raw-data-files.bmp "image3"
+[image4]: ./Description-Images/exp01_user01-signals.PNG "image4"
+[image5]: ./Description-Images/activity01.PNG "image5"
+[image6]: ./Description-Images/Standing.PNG "image6"
+[image7]: ./Description-Images/sitting.PNG "image7"
+[image8]: ./Description-Images/lying.PNG "image8"
+[image9]: ./Description-Images/med-filtered.PNG "image9"
+[image10]: ./Description-Images/original-signal-processing.bmp "image10"
+[image11]: ./Description-Images/rows-per-exp.PNG "image11"
+[image12]: ./Description-Images/rows-per-activity.PNG "image12"
+[image13]: ./Description-Images/useful-rows-per-exp.PNG "image13"
+[image14]: ./Description-Images/mean-time-per-activity.PNG "image14"
+
+____________________________________________________
 # Human Activity Recognition Using Smartphones:
 
 # I.  Introduction:
@@ -6,6 +23,10 @@ Since 1870 a large growth in human life expectancy has been observed in Europe. 
 
 #### Project Origins:
 To fulfil remote monitoring systems’ requirements [Jorge Luis Reyes Ortiz](https://www.icephd.org/wiki/index.php/Jorge_Luis_Reyes_Ortiz) has developed a complete [Human Activity Recognition System](https://en.wikipedia.org/wiki/Activity_recognition) able to detect and recognize 12 different activities performed by humans in their daily living in online mode using smartphones. The recognition part of his system is based on an [SVM model](https://en.wikipedia.org/wiki/Support_vector_machine) already trained, capable of predicting activities performed by users. Necessary datasets of users’ movements will be collected from smartphone sensors ([accelerometer](https://en.wikipedia.org/wiki/Accelerometer) and [gyroscope](https://en.wikipedia.org/wiki/Gyroscope)), processed and then fed to the prediction model to recognize performed activities.
+
+
+![image1]
+
 
 To build the final model embedded in this HAR system. An offline version of this system needs to be created for two reasons:
 ##### 1. To construct the `signal processing pipeline` and process the original data collected.
@@ -69,8 +90,22 @@ This repository [Human-Activity-Recognition-Using-Smartphones](https://github.co
 The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (`standing`, `sitting`, `lying`) and three dynamic activities (`walking`, `walking downstairs` and `walking upstairs`). The experiment also included postural transitions that occurred between the static postures. These are: `stand-to-sit`, `sit-to-stand`, `sit-to-lie`, `lie-to-sit`, `stand-to-lie`, and `lie-to-stand`. 
 All the participants were wearing a smartphone (Samsung Galaxy S II) on the waist during the experiment execution. They captured `3-axial linear acceleration` and `3-axial angular velocity `at a constant rate of `50Hz` using the embedded accelerometer and gyroscope of the device. The experiments were video-recorded to label the data manually. The resulted dataset stored in the directory `Raw-Data` could be considered as the original labelled dataset and from it different subsets would be generated.
 
+
+![image2]
+![image3]
+![image4]
+![image5]
+![image6]
+![image7]
+![image8]
+
+
 ### B. Data Splitting:
 This `Raw-Data` was randomly partitioned into two sets, where `70%` of the volunteers was selected for generating the training data and `30%` for the test data.
+
+
+![image10]
+
 
 ### C. Signal Processing:
 
@@ -78,6 +113,10 @@ This `Raw-Data` was randomly partitioned into two sets, where `70%` of the volun
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals `t_Acc-XYZ` and `t_Gyro-XYZ`. These time domain signals (**prefix 't' to denote time**) were captured at a constant rate of `50 Hz`. Then they were filtered using a median filter and a `3rd order low pass Butterworth filter` with a corner frequency of `20 Hz` to remove noise. 
 
 **1- Median Filter:**  was applied to reduce background noise.
+
+
+![image9]
+
 
 **2- 3rd order Low pass Butterworth filter** with a cut-off, `frequency = 20hz` was applied to remove high frequency noise.
 
@@ -220,8 +259,14 @@ Under The `HAPT-Dataset` Directory we have:
 			- Column 3: activity number ID 
 			- Column 4: Label start point (in number of signal log samples (recorded at 50Hz))
 			- Column 5: Label end point (in number of signal log samples)
- 
- 
+
+
+![image11]
+![image12]
+![image13]
+![image14]
+
+
 2. `./ Processed-Data/`: This Directory includes the **fully processed dataset** which concerns all The twelve activities performed by users in the experiment.
 		
 		- `X_train.txt` : Train features, each line is composed 561-feature vector with time and 
